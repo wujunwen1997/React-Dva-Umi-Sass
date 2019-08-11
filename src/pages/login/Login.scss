@@ -1,0 +1,17 @@
+.loginForm {
+  width: 350px;
+  position: absolute;
+  top: 14%;
+  left: 50%;
+  padding: 35px 35px 1px;
+  margin-left: -175px;
+  background: #efe6e9;
+  p{
+    color: #536474;font-size: 18px;text-align: center;
+  }
+  .formButton {
+    width: 100%;
+  }
+  .register{text-align: right;font-size: 12px;text-decoration: underline; cursor: pointer }
+}
+

@@ -1,0 +1,11 @@
+.newsDetail{
+  width: 60%;min-height: 300px;margin: auto;padding-top: 50px;font-size: 14px;
+  .all{
+    p{
+      span{border-bottom: 1px saddlebrown dashed}
+    }
+    .title{text-align: center;}
+    .content{padding: 0 15%;margin-top: 30px;span{width: 100%;display: inline-block;text-indent: 2em}}
+    .time{float: right;margin-top: 30px;margin-right: 50px;}
+  }
+}

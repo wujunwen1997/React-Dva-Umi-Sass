@@ -1,0 +1,13 @@
+.set{
+  float: right;margin-right: 20px;height: 100%;line-height: 50px;
+  display: flex;
+  text-align: center;
+  >span{float: right;height: 32px;width: 32px;margin: auto;}
+  .name{
+    margin-right: 10px;
+    button{font-size: 10px}
+  }
+  .menuLang{
+    margin-right: 20px;
+  }
+}

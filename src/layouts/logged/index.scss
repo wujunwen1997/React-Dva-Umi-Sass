@@ -1,0 +1,85 @@
+.layout {
+  height: 100vh;
+  .Sider {
+    .logo {
+      height: 50px;
+      text-align: center;
+      .imgBig {
+        height: 22px;
+        margin-top: 14px
+      }
+      .imgSmall {
+        height: 14px;
+        margin-top: 18px
+      }
+    }
+    .list{
+      height:calc(100vh - 100px);overflow-x: hidden;
+    }
+  }
+  .content{
+    margin: 0;overflow-y: auto;
+  }
+}
+:global {
+  #nprogress {
+    pointer-events: none;
+
+    .bar {
+      background: #5f5eff;
+      position: fixed;
+      z-index: 2048;
+      top: 0;
+      left: 0;
+      right: 0;
+      width: 100%;
+      height: 1px;
+    }
+
+    .peg {
+      display: block;
+      position: absolute;
+      right: 0;
+      width: 100px;
+      height: 100%;
+      box-shadow: 0 0 10px #5f5eff, 0 0 5px #5f5eff;
+      opacity: 1;
+      transform: rotate(3deg) translate(0, -4px);
+    }
+
+    .spinner {
+      display: block;
+      position: fixed;
+      z-index: 1031;
+      top: 15px;
+      right: 15px;
+    }
+
+    .spinner-icon {
+      display: none;
+    }
+  }
+
+  .nprogress-custom-parent {
+    overflow: hidden;
+    position: relative;
+
+    #nprogress {
+      .bar,
+      .spinner {
+        position: absolute;
+      }
+    }
+  }
+}
+
+@keyframes nprogress-spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
