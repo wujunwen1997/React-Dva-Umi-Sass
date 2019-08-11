@@ -31,6 +31,7 @@ export default function $axios (options) {
         if (data && data.msg) {
           message.error(data.msg || 'code码出现错误提示');
           if (data.status === 10) {
+            console.log(123)
             layout();
           }
         }
